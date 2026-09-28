@@ -1,0 +1,32 @@
+:root {
+  --bg: #0b0910;
+  --panel: #15111e;
+  --ink: #efeaf7;
+  --muted: #a79dbb;
+  --line: #2b2338;
+  --accent: #b27cff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.65 "Inter", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  padding-inline: 16px;
+  padding-block: 32px 64px;
+}
+.wrap { max-width: 44rem; margin: 0 auto; display: grid; gap: 32px; }
+header { display: flex; align-items: center; gap: 16px; }
+header img { width: 72px; height: 72px; border-radius: 50%; }
+header a { color: inherit; text-decoration: none; }
+.brand { font-weight: 800; letter-spacing: .08em; text-transform: uppercase; font-size: 20px; }
+.tag { color: var(--muted); font-size: 14px; }
+h1, h2 { line-height: 1.2; margin: 0; text-wrap: balance; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.25rem; margin-top: 8px; }
+p, li { margin: 0; }
+section { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 24px; display: grid; gap: 12px; }
+ul { margin: 0; padding-left: 1.2rem; display: grid; gap: 8px; }
+a { color: var(--accent); }
+nav { display: flex; flex-wrap: wrap; gap: 16px; font-size: 15px; }
+footer { color: var(--muted); font-size: 13px; }
